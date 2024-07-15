@@ -27,7 +27,7 @@ int lead_value(float current, float total) {
 void display_progress(int progress, string text = "") {
     int tmp_progress = progress;
 
-    cout << text << " " << "[";
+    cout << text.c_str() << " " << "[";
     int pos = progress / 2;
     for (int i = 0; i < 100 / 2; ++i) {
         if (i < pos) {
